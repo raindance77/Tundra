@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css?family=Cute Font' rel='stylesheet'>
+ <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Qwitcher+Grypen:wght@400;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Qwitcher+Grypen:wght@400;700&family=Shadows+Into+Light&family=Special+Elite&display=swap" rel="stylesheet">
+	<style>
+ /* Fonts and Fine Accents */
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Inconsolata|Rock+Salt&display=swap');
+
+ 
+
+ 
+
+ a:hover {
+ color: #f0a500;
+ cursor: url(http://cur.cursors-4u.net/others/oth-6/oth589.cur), pointer !important;
+ letter-spacing: 1.2px;
+ }
+
+ /* Custom Scrollbar */
+ ::-webkit-scrollbar {
+ width: 10px;
+ background-color: rgba(0, 0, 0, 0.2);
+ }
+
+ ::-webkit-scrollbar-thumb {
+ background-color: #f0a500;
+ border-radius: 5px;
+ }
+
+ /* Body Styling with Background */
+ body { 
+ background-image: url("https://i.imgur.com/9ryjA49.png");
+			background-size: cover;
+ color: white;
+ cursor: url('http://i.imgur.com/2qleX.jpg'), default;
+ font-family: 'Inconsolata', monospace;
+ }
+
+
+
+
+ /* ooc Text Box */
+ .ooc {
+ color: white;
+ font-size: 14px;
+ text-align: center;
+ background-color: rgba(0, 0, 0, 0.65);
+ border-radius: 8px;
+ padding: 8px;
+ position: fixed;
+ left: 40%;
+ bottom: 12%;
+ height: 120px;
+ width: 405px;
+ z-index: 8;
+ overflow-y: auto;
+ box-shadow: 0px 0px 10px black;
+ }
+
+     .charimg {
+            background-color: transparent;
+            background-image: url('https://i.pinimg.com/736x/e5/86/a3/e586a38c1bc9313db645306ccbb9bd21.jpg');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            bottom: 150px;
+            left: 15%;;
+            height: 600px;
+            width: 400px;
+            z-index: 1;
+            border-radius: 10px;
+            border: 3px solid #5D4E54;
+            box-shadow: 0px 0px 15px #D1795B;
+        }
+
+		
+		.cuteimg{
+ 
+ 
+ position: absolute;
+ 
+ right: 25%;
+			bottom: 0.2%;
+ width: 50px;
+ z-index: 1;
+ 
+ }
+
+
+ /* Title Styling */
+ .title {
+ position: fixed;
+ bottom: 770px;
+ left: 870px;
+	font-family: "Special Elite", system-ui;
+ color: white;
+ font-size: 42px;
+ text-align: center;
+ letter-spacing: 3px;
+ z-index: 2;
+ text-shadow: 2px 2px 6px #000, 0px 0px 10px #203A57;
+ 
+ padding: 6px;
+ transform: rotate(15deg);
+ }
+
+ /* Stats Section */
+ .stats {
+ color: white;
+ font-size: 12px;
+ text-align: left;
+ background-color: rgba(0, 0, 0, 0.4);
+ border-radius: 8px;
+  box-shadow: 0px 0px 10px black;
+ padding: 10px;
+ position: fixed;
+ left: 40%;
+ bottom: 30%;
+ height: 340px;
+ width: 405px;
+ z-index: 8;
+ overflow-y: auto;
+
+ }
+
+ 
+
+ li {
+
+padding-bottom: 0%;
+vertical-align: bottom;
+
+
+}
+
+ .tooltip .tooltiptext {
+ visibility: hidden;
+ width: 160px;
+ background-color: rgba(0, 0, 0, 0.75);
+ color: #0ed2f7;
+ text-align: center;
+ border-radius: 5px;
+ padding: 5px 10px;
+ position: absolute;
+ z-index: 10;
+ bottom: 120%; 
+ left: 62%;
+ margin-left: -80px;
+ opacity: 0;
+ font-size: 11px;
+ transition: opacity 0.3s;
+ box-shadow: 0px 0px 10px #f0a500;
+ }
+
+ .tooltip:hover .tooltiptext {
+ visibility: visible;
+ opacity: 1;
+ }
+
+ /* Marker Highlight */
+ .marker { 
+ background-color: rgba(157, 189, 228, 0.3);
+ padding: 0 4px;
+ border-radius: 3px;
+ }
+a{
+ color: white;
+}
+ b { 
+ color: #82818B;
+ 	font-family: "Special Elite";
+	text-shadow: 0px 0px 1px black;
+
+ }
+
+ i { 
+ color: white;
+ }
+
+ h1 {
+ color: #f0a500;
+ font-size: 22px;
+ text-align: center;
+ }
+
+ 
+
+ c {
+ text-shadow: 1px 1px 5px #000, 0px 0px 8px #0ed2f7;
+ }
+		
+#menu {
+position: absolute;
+z-index: 5;
+top: 40.0%;
+width: 100%
+float: right;
+left: 35%;
+margin: 0 0 3em 0;
+padding: 0;
+
+border-radius: 50%;
+seperate: 1%;
+border-collapse: seperate;
+
+}
+
+
+.tab-folder > .tab-content:target ~ .tab-content:last-child, .tab-folder > .tab-content {
+ display: none;
+}
+.tab-folder > :last-child, .tab-folder > .tab-content:target {
+ display: block;
+}
+::-webkit-scrollbar {
+ width: 0px;
+ 
+	}
+	
+	d { 
+	letter-spacing: 2px;
+		font-family: "Special Elite", system-ui;
+		}
+		
+				
+
+.myButton {
+	
+	border-radius:50%;
+
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:0.938em
+	font-weight:bold;
+	padding:0.4em 0.4em;
+	text-decoration:none;
+	text-shadow:0px 0.063em 0px black;
+}
+.myButton:hover {
+
+
+}
+.myButton:active {
+	position:relative;
+	top:0.063em;
+}
+
+ul { list-style: none;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://i.imgur.com/E5g9BxW.png'); /* Replace with your image URL */
+	background-size: cover;
+	background-repeat: no-repeat;
+
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease; /
+}
+   .overlay-text {
+   margin-top: 500px;
+        font-size: 20px;
+        color: white;
+		font-family: "Special Elite", system-ui;
+        text-align: center;
+        letter-spacing: 3px;
+        text-shadow: 2px 2px 6px #000, 0px 0px 10px #203A57;
+        padding: 6px;
+    bottom: 30%;
+        cursor: pointer;
+        transition: color 0.3s ease, transform 0.3s ease;
+        animation: typewriter 3s steps(40, end) 1s 1 normal both; /* Typewriter effect */
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 2px solid white; /* Cursor effect */
+		text-shadow: 2px 2px 6px rgba(0, 0, 50, 0.8), /* Dark blue shadow */
+                     0px 0px 10px rgba(0, 0, 100, 0.6), /* Light blue glow around */
+                     0px 0px 15px rgba(50, 100, 255, 0.5); /* Soft glow for extra effect */
+    }
+
+    /* Keyframes for typewriter effect */
+    @keyframes typewriter {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+	
+
+    /* Optional: Blinking cursor effect */
+    @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: white; }
+    }
+
+    /* Apply the blinking caret */
+    .overlay-text {
+        animation: typewriter 3s steps(40, end) 1s 1 normal both, blink-caret 0.75s step-end infinite;
+    }
+
+/* Bounce animation */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0) rotate(15deg); }
+    50% { transform: translateY(-10px) rotate(15deg); } /* Adjust -10px as needed for bounce height */
+}
+		
+
+        /* Hide overlay when it has the 'hidden' class */
+        .overlay.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+		
+		#hide:target + .overlay {
+    opacity: 0;
+    visibility: hidden;
+	pointer-events: none;
+}
+/* Fade out the overlay when clicked */
+#overlay-toggle:checked + .overlay {
+    opacity: 0; /* Fades out */
+    visibility: hidden; /* Hides from view */
+    pointer-events: none; /* Disable interaction once hidden */
+}
+
+.marker:hover{ 
+
+background-color: black;
+}
+
+.marker:title {
+
+background-color: black;
+}
+ </style>
+</head>
+
+<body>
+<input type="checkbox" id="overlay-toggle" style="display: none;">
+<label for="overlay-toggle" class="overlay"><br><br><br><br><br><br>
+    <div class="overlay-text">A secret sleeps beneath the ice. Dare you wake it?</div>
+</label>
+ <ul id="menu">
+	
+		<li><a href="#tab1" class="myButton"><img src="https://i.imgur.com/kVJa8y0.png" width="35px"></a></li>
+		<li><a href="#tab2" class="myButton"><img src="https://i.imgur.com/kVJa8y0.png" width="35px"></a></li>
+	
+			<li><a href="#tab5" class="myButton"><img src="https://i.imgur.com/kVJa8y0.png" width="35px"></a></li>
+			<li><a href="#tab6" class="myButton"><img src="https://i.imgur.com/kVJa8y0.png" width="35px"></a></li>
+	
+	</ul>
+<div class="texture"></div>
+<div class="borderbox1"></div>
+<div class="borderbox2"></div>
+<div class="charimg"></div>
+
+<div class="title"></div>
+
+<div class="statbox"></div>
+<div class="stats">
+<div class="ooc">
+ <b> dm friendly, dark themes preferred, flexible character, smut is only unlocked with story, T1 combat, questions? Ask! w.i.p. profile </b>
+</div>
+
+<div class="stats">
+ 
+
+
+
+	<div id="tab1" class="tab-content"><d><b><center>General;</center> </d> <br> <b>moniker; Jozif
+ <br><b>nickname; None
+	 <br><b>age; 24
+	 <br><b>height; 1.85m 
+	 <br><b>weight; 100kg
+	 <br><b>occupation;</b><span class="marker" title="servant of the Zimnyye Nauki, an ancient order of assassins celebrating bloodshed in the name of their deity.">Assassin </span>
+		 <br><b>orientation; <span class="marker" title="virgin; celibate lifestyle">unbiased</span>
+		 <br> eyes;  <span class="marker" title="crimson and silver">heterochromia</span>
+		 <br> hair; dark, untamed
+	
+	
+	 </div>
+	 
+	<br><br><br>	<br><br><br><div id="tab2" class="tab-content"><d><center>History; </center></d> <br> 
+Far in the frozen north, where the winds howl like wolves and snow blankets the world in silence, stands the hidden temple of the Iskald Varder. It is a place of austere beauty and relentless trials, where the unyielding are forged into living weapons. Taken as an infant, a desperate offering from a struggling settlement clinging to life at the edge of the icy wilds, Jozif was thrust into this unforgiving order. He was made to endure grueling trials and bitter winters alone, exposed to the merciless elements and forced to wrest survival from the frozen earth. These ordeals, meant to purge weakness, shaped him into a relentless survivor.
+
+He emerged bearing the Blodmerke—Frostskinn, Stormbryter, and Tordenklo—each a testament to his remarkable endurance and the beginning of his bond with Morozith, the shadowy god of frost and secrets. These sacred marks, etched with the power of his trials, sharpened his natural abilities, turning him into a weapon of silent precision. Yet, the later branding of the Asuraskja during a mission against a rogue sorcerer shattered his fragile balance. The cursed mark made him a beacon for eldritch forces, altering his fate forever and binding him to a path of endless strife. Now he treads a shadowed path, fighting not only the foes of his order but the creeping darkness within, a stark reminder of the cost of survival in the frostbitten wilds.
+</div>
+
+<div id="tab5" class="tab-content">  <br><br><br><br><center>Abilities; <br><br></center>
+
+<li>Frostjern Discipline: This ruthless martial art, perfected by the Iskald Varder, uses Jozif’s formidable strength and precision to deadly effect, making his body a weapon honed by ice and shadow. He favors unarmed combat as a pure expression of his devotion to Morozith but is equally skilled with weapons when the need arises.<br><br>
+
+<li>Blodmerke Activation: Through intense meditation or the spilling of his own blood, Jozif can temporarily heighten his physical abilities by drawing on the power of the Blodmerke. However, each activation, particularly when fueled by blood, deepens the influence of the Asuraskja, creating a dangerous dependency.<br><br>
+
+<li>Physical Attributes: Years of brutal training and the blessings of the Blodmerke have endowed him with strength, agility, and endurance far beyond the limits of ordinary men.<br><br>
+
+<li>Silent Grace: The Frostskinn Mark and rigorous discipline allow him to move with an uncanny silence, his steps as soft as falling snow despite his size.<br><br>
+
+<li>Heightened Instincts: His senses are sharpened to near-superhuman levels, allowing him to detect faint changes in his surroundings, foresee danger, and hunt his prey with almost supernatural accuracy. This instinct is crucial in his battle against the constant threat of eldritch entities.<br><br>
+
+<li>Cold Immunity and Poison Resilience: A lifetime spent enduring frost and sacred trials has rendered him immune to the bite of the cold and granted him an exceptional ability to neutralize toxins within his body.<br>
+</div>
+<br><br><br><br>
+<div id="tab6" class="tab-content"> <center>Appearances </center><br> <br> Jozif is an imposing figure, his large frame and thick bones supporting a lean, powerfully muscled physique. Pale skin, a testament to the harsh northern climate and the strain of his curse, stretches taut over his athletic build. Dark, untamed hair frames a face etched with sharp angles and unwavering stoicism. His heterochromatic eyes, one crimson, the other a chilling silver-blue, add to his unsettling presence. He favors dark, functional clothing, blending seamlessly with the shadows. </div>
+ 
+
+</body>
+</html>
